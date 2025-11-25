@@ -1819,3 +1819,27 @@ img {
 .smooth-scroll {
     scroll-behavior: smooth;
 }
+/* Loading animation for images */
+.model-image {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Selection color */
+::selection {
+    background: var(--color-blue-200);
+    color: var(--color-blue-900);
+}
+
+::-moz-selection {
+    background: var(--color-blue-200);
+    color: var(--color-blue-900);
+}
